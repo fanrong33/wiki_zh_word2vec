@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     # check and process input arguments
     if len(sys.argv) != 3:
-        print("Using: python process_wiki.py zhwiki.xxx.xml.bz2 wiki.zh.text")
+        print("Using: python process_wiki.py zhwiki.xxx.xml.bz2 wiki.zh.txt")
         sys.exit(1)
     
     input_file, output_file = sys.argv[1:3]
