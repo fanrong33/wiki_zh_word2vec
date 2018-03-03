@@ -32,6 +32,12 @@ words = [wp[0] for wp in model.most_similar(word, topn=20)]
 words_in_vector = [model[word] for word in words]
 # print(words_in_vector)
 
+# print(model['爸爸'])
+''' size长度为400的词向量
+[  1.22842872e+00   9.84687269e-01   9.24556017e-01  -2.57590771e-01
+   ...
+   1.67887378e+00  -2.94714928e+00  -1.82157099e+00  -4.83914346e-01]
+'''
 
 # 训练 PCA 模型进行降维
 pca = PCA(n_components=2)  # 只保留2个维度
